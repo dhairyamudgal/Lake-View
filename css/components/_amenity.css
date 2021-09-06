@@ -1,0 +1,94 @@
+.amenity-box {
+	border-radius: 3px;
+	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+	width: 28rem;
+	height: 40rem;
+	color: #fff;
+	position: relative; }
+	
+	.amenity-box--1 {
+	  background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.5), rgba(79, 97, 42, 0.5)), url(img/amenity-img-1.jpg);
+	  background-size: cover;
+	  background-position: 78% 50%; }
+	.amenity-box--2 {
+	  background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.5), rgba(79, 97, 42, 0.5)), url(img/amenity-img-2.jpg);
+	  background-size: cover;
+	  background-position: 78% 50%; }
+	.amenity-box--3 {
+	  background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.5), rgba(79, 97, 42, 0.5)), url(img/amenity-img-3.jpg);
+	  background-size: cover;
+	  background-position: 78% 50%; }
+	.amenity-box--4 {
+	  background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.5), rgba(79, 97, 42, 0.5)), url(img/amenity-img-4.jpg);
+	  background-size: cover;
+	  background-position: 78% 50%; }
+	.amenity-box__title {
+	  font-size: 4rem;
+	  text-transform: uppercase;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	  opacity: .7;
+	  transition: opacity .2s; }
+	  
+	.amenity-box__overlay {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 28rem;
+	  height: 40rem;
+	  background-image: linear-gradient(to right bottom, #28b485, #4f612a);
+	  opacity: 0;
+	  transition: opacity .2s; }
+	  
+	.amenity-box:hover .amenity-box__overlay {
+	  opacity: .7; }
+	.amenity-box:hover .amenity-box__title {
+	  opacity: 0; }
+	.amenity-box__content {
+	  position: absolute;
+	  top: 10%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	  width: 85%;
+	  opacity: 0;
+	  transition: all .2s; }
+	  
+	.amenity-box:hover .amenity-box__content {
+	  opacity: 1;
+	  top: 50%; }
+	.amenity-box__icon {
+	  font-size: 6rem;
+	  margin-bottom: .5rem;
+	  background-image: linear-gradient(to right bottom, #fff, #ffb900);
+	  -webkit-background-clip: text;
+	  color: transparent; }
+	.amenity-box__text {
+	  font-size: 1.5rem; }
+  
+  .bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: .4;
+	width: 100%;
+	overflow: hidden; }
+	.bg-video__content {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover; }
+	.bg-video__overlay {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  height: 100%;
+	  width: 100%;
+	  background-color: #2998ff;
+	  opacity: .5;
+	  z-index: 2; }
+  
+  

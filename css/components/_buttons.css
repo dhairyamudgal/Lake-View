@@ -1,0 +1,54 @@
+
+  .btn:link, .btn:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 1rem 3rem;
+	border-radius: 5rem;
+	font-size: 1.6rem;
+	position: relative;
+	border: 2px solid #846c38;
+	display: inline-block;
+	transition: all .2s; }
+  
+  .btn:hover {
+	outline: none;
+	transform: translateY(-3px);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+  
+  .btn:active {
+	transform: translateY(-1px);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  
+  .btn--brown {
+	background-color: #846c38;
+	color: #f7f7f7;
+	margin: 2.5rem 1rem 0 0; }
+	@media only screen and (max-width: 48em) {
+	  .btn--brown {
+		margin: 1rem; } }
+  
+  .btn-rectangular:link, .btn-rectangular:visited {
+	color: #846c38;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 1px solid #846c38;
+	padding: 1rem 3rem;
+	font-size: 1.6rem;
+	transition: all .2s; }
+  
+  .btn-rectangular--white:hover, .btn-rectangular:hover {
+	background-color: #846c38;
+	color: #fff;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+	transform: translateY(-3px); }
+  
+  .btn-rectangular--white:active, .btn-rectangular:active {
+	transform: translateY(-1px);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  
+  .btn-rectangular--white:link, .btn-rectangular--white:visited {
+	color: #fff;
+	border-bottom: 1px solid #fff; }
+  
+  .btn-rectangular--white:hover {
+	border-bottom: 1px solid transparent;}

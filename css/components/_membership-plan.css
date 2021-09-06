@@ -1,0 +1,111 @@
+
+ 
+  .plan {
+	height: 47rem;
+	color: #fff;
+	perspective: 150rem;
+	position: relative; }
+	
+	.plan__side {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  backface-visibility: hidden;
+	  height: 100%;
+	  width: 100%;
+	  transition: all .9s;
+	  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+	  overflow: hidden; }
+	  
+	  .plan__side--front {
+		background-color: #fff;
+		border-radius: 30px 0 30px 0; }
+		
+	  .plan__side--back {
+		background-color: #28b485;
+		transform: rotateY(180deg);
+		border-radius: 0 30px 0 30px; }
+		
+		.plan__side--back-1 {
+		  background-image: linear-gradient(to right bottom, #e2b5a8, #876C64); }
+		.plan__side--back-2 {
+		  background-image: linear-gradient(to right bottom, #bbd4eb, #707F8D); }
+		.plan__side--back-3 {
+		  background-image: linear-gradient(to right bottom, #B398B0, #80657D); }
+	.plan:hover .plan__side--front {
+	  transform: rotateY(-180deg); }
+	 
+	.plan:hover .plan__side--back {
+	  transform: rotateY(0); }
+	.plan__image {
+	  height: 18rem;
+	  background-size: cover;
+	  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+	  @supports (background-blend-mode: overlay) {
+		.plan__image {
+		  background-blend-mode: overlay; } }
+	  .plan__image--1 {
+		background-image: linear-gradient(to right bottom, rgba(226, 181, 168, 0.5), rgba(135, 108, 100, 0.5)), url(img/plan-img-1.jpg); }
+		@supports (background-blend-mode: overlay) {
+		  .plan__image--1 {
+			background-image: linear-gradient(to right bottom, #e2b5a8, #876C64), url(img/plan-img-1.jpg); } }
+	  .plan__image--2 {
+		background-image: linear-gradient(to right bottom, rgba(187, 212, 235, 0.5), rgba(112, 127, 141, 0.5)), url(img/plan-img-2.jpg); }
+		@supports (background-blend-mode: overlay) {
+		  .plan__image--2 {
+			background-image: linear-gradient(to right bottom, #bbd4eb, #707F8D), url(img/plan-img-2.jpg); } }
+	  .plan__image--3 {
+		background-image: linear-gradient(to right bottom, rgba(179, 152, 176, 0.5), rgba(128, 101, 125, 0.5)), url(img/plan-img-3.jpg); }
+		@supports (background-blend-mode: overlay) {
+		  .plan__image--3 {
+			background-image: linear-gradient(to right bottom, #B398B0, #80657D), url(img/plan-img-3.jpg); } }
+	.plan__heading {
+	  color: #fff;
+	  font-weight: 400;
+	  font-size: 2.8rem;
+	  text-transform: uppercase;
+	  position: absolute;
+	  top: 9rem;
+	  right: 2rem;
+	  width: 20rem;
+	  text-align: right;
+	  padding: 1rem 1.5rem; }
+	  .plan__heading--1 {
+		background-image: linear-gradient(to right bottom, rgba(226, 181, 168, 0.7), rgba(135, 108, 100, 0.7)); }
+	  .plan__heading--2 {
+		background-image: linear-gradient(to right bottom, rgba(187, 212, 235, 0.7), rgba(187, 212, 235, 0.7)); }
+	  .plan__heading--3 {
+		background-image: linear-gradient(to right bottom, rgba(179, 152, 176, 0.7), rgba(128, 101, 125, 0.7)); }
+	.plan__bullets {
+	  padding: 3rem; }
+	  .plan__bullets ul {
+		color: #777;
+		list-style: none;
+		width: 90%;
+		margin: 0 auto; }
+		.plan__bullets ul li {
+		  text-align: center;
+		  font-size: 1.3rem;
+		  padding: 2rem; }
+		  .plan__bullets ul li:not(:last-child) {
+			border-bottom: 1px solid #eee; }
+	.plan__button {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	  width: 90%;
+	  text-align: center; }
+	  
+	.plan__cost-box {
+	  color: #fff;
+	  margin-bottom: 16rem; }
+	  
+	.plan__cost-value {
+	  font-size: 4.5rem;
+	  font-weight: 100; }
+	.plan__cost-duration {
+	  font-size: 1.5rem;
+	  text-transform: uppercase; }
+	  

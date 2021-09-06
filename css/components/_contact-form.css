@@ -1,0 +1,104 @@
+
+  .contact {
+	height: 53rem;
+	background-image: radial-gradient(circle closest-corner at 75% 52%, transparent 0%, transparent 50%, rgba(40, 180, 133, 0.4) 50%), url(img/contact-form-img-2.jpg);
+	background-size: 100%;
+	background-position: left 50%;
+	border-radius: 3rem;
+	box-shadow: 0 1.5rem 4reb rgba(0, 0, 0, 0.2); }
+	
+	.contact__form {
+	  width: 50%;
+	  padding: 6rem; }
+	  
+  
+  .form__input {
+	font-size: 1.5rem;
+	padding: 1.5rem 2rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+	width: 100%;
+	border-radius: 2px;
+	color: #333;
+	font-family: inherit;
+	opacity: 1;
+	border-bottom: 3px solid transparent; }
+	.form__input::-webkit-input-placeholder {
+	  color: #333; }
+	.form__input:focus {
+	  outline: none;
+	  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+	  border-bottom: 3px solid #4f612a; }
+	.form__input:invalid {
+	  border-bottom: 3px solid #876C64; }
+  
+  .form__input:placeholder-shown + .form__label {
+	opacity: 0;
+	transform: translateY(-4rem); }
+  
+  .form__label {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-left: 2rem;
+	margin-top: .7rem;
+	color: #fff;
+	display: block;
+	transition: all .3s; }
+  
+  .form__group {
+	margin-bottom: 3rem; }
+  
+  .form__radio-group {
+	display: inline-block;
+	width: 30%; }
+  
+  .form__radio-input:checked + .form__radio-label .form__radio-button::after {
+	opacity: 1; }
+  
+  .form__radio-label {
+	font-size: 1.6rem;
+	color: #fff;
+	display: inline-block;
+	cursor: pointer;
+	padding-left: 5rem;
+	position: relative; }
+  
+  .form__radio-input {
+	  
+	display: none; }
+  
+  .form__radio-button {
+	  
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+	background-image: url(img/golf-ball-texture-small.jpg);
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0; }
+	.form__radio-button::after {
+	  content: "";
+	  display: block;
+	  height: 1.3rem;
+	  width: 1.3rem;
+	  border-radius: 50%;
+	  background-color: #28b485;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	  opacity: 0;
+	  transition: opacity .2s; }
+  
+  .form__textarea {
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+	font-family: inherit;
+	color: #333;
+	width: 100%;
+	height: 10rem;
+	padding: 1.5rem 1rem; }
+  
